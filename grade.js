@@ -1,6 +1,9 @@
-const mark =70
-function calculateGrade(mark) {
-    if (mark > 79) {
+
+function calculateGrade(mark) { 
+    if(mark > 100 || mark < 0 ) {
+    return "invalid mark"
+}
+   else if (mark > 79) {
         return 'A';
     } else if (mark >= 60 && mark <= 79) {
         return 'B';
@@ -13,4 +16,4 @@ function calculateGrade(mark) {
     }
 }
 
-calculateGrade();
+ console.log(calculateGrade());
